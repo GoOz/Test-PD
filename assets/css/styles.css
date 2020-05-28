@@ -26,6 +26,10 @@ body {
   background-color: var(--white);
 }
 
+.svg-sprite {
+  display: none;
+}
+
 /* Layout
 /* ---------------------------------------------------------- */
 .layout {
