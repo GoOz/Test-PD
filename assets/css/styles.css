@@ -15,6 +15,20 @@ x. Media Queries
 
 /* Basics & tools
 /* ---------------------------------------------------------- */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 :root {
   --darker-grey: #131313;
   --dark-grey: #323232;
@@ -32,6 +46,7 @@ body {
   margin: 0;
   background-color: var(--white);
   color: var(--medium-grey);
+  font-family: Roboto, sans-serif;
 }
 
 .svg-sprite {
@@ -51,6 +66,7 @@ body {
   padding: .5rem;
   color: var(--dark-blue);
   text-transform: uppercase;
+  font-family: Roboto, sans-serif;
   font-size: .8rem;
   font-weight: bold;
   cursor: pointer;
