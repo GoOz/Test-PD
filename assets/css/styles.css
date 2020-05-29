@@ -6,7 +6,7 @@
 3. Header
 4. Navigation
 5. Footer
-6. Breadcrumbs
+6. Toolbar
 7. Content
 
 x. Media Queries
@@ -23,6 +23,8 @@ x. Media Queries
   --white: #FFF;
   --PD-blue: #31A6EA;
   --blue: #269BE8;
+  --dark-blue: #1274B4;
+  --darker-blue: #0F5C8F;
   --alert: #FF8296;
 }
 
@@ -34,6 +36,28 @@ body {
 
 .svg-sprite {
   display: none;
+}
+
+.button {
+  border: .0625rem solid var(--darker-blue);
+  background-color: var(--white);
+  border-radius: 0;
+  padding: .5rem;
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--darker-blue);
+  color: var(--white);
+}
+
+.button:active {
+  background-color: var(--dark-blue);
 }
 
 /* Layout
@@ -60,10 +84,12 @@ body {
 /* Header
 /* ---------------------------------------------------------- */
 .header {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: .75rem;
+  padding: .7rem;
+  min-height: 5rem;
   background-color: var(--dark-grey);
 }
 
@@ -144,12 +170,38 @@ body {
   text-transform: capitalize;
 }
 
-/* Breadcrumbs
+/* Toolbar
 /* ---------------------------------------------------------- */
-.breadcrumbs {
+.toolbar {
+  box-sizing: border-box;
   flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--blue);
 }
 
+.breadcrumbs {
+  font-size: 1.7rem;
+  color: var(--white);
+}
+
+.breadcrumbs a:link,
+.breadcrumbs a:visited {
+  color:var(--white);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: var(--light-grey);
+  text-decoration: none;
+}
+
+.breadcrumbs a:active {
+  color: var(--medium-grey);
+}
 /* Content
 /* ---------------------------------------------------------- */
 .content {
