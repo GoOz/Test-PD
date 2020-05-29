@@ -19,7 +19,7 @@ x. Media Queries
   --darker-grey: #131313;
   --dark-grey: #323232;
   --medium-grey: #4A4A4A;
-  --light-grey: #F7F7F7;
+  --light-grey: #e6e6e6;
   --white: #FFF;
   --PD-blue: #31A6EA;
   --blue: #269BE8;
@@ -36,6 +36,12 @@ body {
 
 .svg-sprite {
   display: none;
+}
+
+.nobullet {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .button {
@@ -164,10 +170,39 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 1.5rem 1.5rem;
+  padding: 1rem 0;
+  border-top: .0625rem solid var(--light-grey);
 }
 
 .footer-copy {
   text-transform: capitalize;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: .85rem;
+}
+
+.footer-navitem {
+  padding: 0 .5rem;
+}
+
+.footer-navitem a:link,
+.footer-navitem a:visited {
+  color: var(--medium-grey);
+}
+
+.footer-navitem a:hover,
+.footer-navitem a:focus {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.footer-navitem a:active {
+  color: var(--dark-blue);
 }
 
 /* Toolbar
@@ -228,6 +263,7 @@ body {
   .footer {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
   }
 
   .navigation {
