@@ -8,8 +8,7 @@
 5. Footer
 6. Toolbar
 7. Content
-
-x. Media Queries
+8. Media Queries
 
 */
 
@@ -22,6 +21,7 @@ x. Media Queries
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
@@ -29,6 +29,7 @@ x. Media Queries
   font-weight: 700;
   font-style: normal;
 }
+
 :root {
   --darker-grey: #131313;
   --dark-grey: #323232;
@@ -243,6 +244,7 @@ a:active {
 .footer {
   flex: 0 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 1.5rem 1.5rem;
   padding: 1rem 0;
@@ -284,6 +286,7 @@ a:active {
   box-sizing: border-box;
   flex: 0 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   min-height: 5rem;
