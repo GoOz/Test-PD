@@ -78,7 +78,7 @@ a:active {
   border: .0625rem solid var(--darker-blue);
   background-color: var(--white);
   border-radius: 0;
-  padding: .5rem;
+  padding: .25rem .75rem;
   color: var(--dark-blue);
   text-transform: uppercase;
   font-family: Roboto, sans-serif;
@@ -97,6 +97,39 @@ a:active {
   background-color: var(--dark-blue);
 }
 
+.button--icononly {
+  padding: .25rem .4rem;
+}
+
+.button-icon {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--white);
+  padding: 1rem;
+  box-shadow: 0 .125rem .250rem 0 var(--light-grey);
+}
+
+.dropdown.active {
+  display: block;
+}
+
+.group {
+  position: relative;
+  display: inline-flex;
+}
+
+.group * + * {
+  border-left: 0;
+}
 /* Layout
 /* ---------------------------------------------------------- */
 .layout {

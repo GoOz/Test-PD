@@ -30,6 +30,19 @@ window.addEventListener("DOMContentLoaded", () => {
       tabs[tabFocus].focus();
     }
   });
+
+  // Dropdown button
+  const dropdowns = document.querySelectorAll('.js-dropdown');
+
+  dropdowns.forEach(drop => {
+    const panel = drop.nextElementSibling
+    drop.onclick = () => panel.classList.toggle('active');
+  })
+
+  // Burger menu
+
+
+
 });
 
 function changeTabs(e) {

@@ -50,7 +50,7 @@
           </li>
           <li class="navigation-listitem">
             <a href="#" class="navigation-link">
-              <svg class="navigation-icon">
+              <svg class="navigation-icon" aria-hidden focusable="false">
                 <use xlink:href="#home"></use>
               </svg>
               Home
@@ -58,7 +58,7 @@
           </li>
           <li class="navigation-listitem">
             <a href="#" class="navigation-link">
-              <svg class="navigation-icon">
+              <svg class="navigation-icon" aria-hidden focusable="false">
                 <use xlink:href="#employee"></use>
               </svg>
               Employees
@@ -66,7 +66,7 @@
           </li>
           <li class="navigation-listitem">
             <a href="#" class="navigation-link">
-              <svg class="navigation-icon">
+              <svg class="navigation-icon" aria-hidden focusable="false">
                 <use xlink:href="#documents"></use>
               </svg>
               Documents
@@ -74,7 +74,7 @@
           </li>
           <li class="navigation-listitem">
             <a href="#" class="navigation-link">
-              <svg class="navigation-icon">
+              <svg class="navigation-icon" aria-hidden focusable="false">
                 <use xlink:href="#distribution"></use>
               </svg>
               Distributions
@@ -82,7 +82,7 @@
           </li>
           <li class="navigation-listitem">
             <a href="#" class="navigation-link">
-              <svg class="navigation-icon">
+              <svg class="navigation-icon" aria-hidden focusable="false">
                 <use xlink:href="#signature"></use>
               </svg>
               Signatures
@@ -91,7 +91,7 @@
           </li>
           <li class="navigation-listitem">
             <a href="#" class="navigation-link">
-              <svg class="navigation-icon">
+              <svg class="navigation-icon" aria-hidden focusable="false">
                 <use xlink:href="#settings"></use>
               </svg>
               Admin
@@ -103,7 +103,15 @@
     <div class="layout-content">
       <div class="toolbar">
         <div class="breadcrumbs"><a href="#">Employees</a>&nbsp;&gt;&nbsp;Carol Jenkins</div>
-        <button type="button" class="button">Edit profile</button>
+        <div class="group">
+          <button type="button" class="button">Edit profile</button>
+          <button class="button button--icononly js-dropdown" aria-label="More actions">
+            <svg class="button-icon">
+              <use xlink:href="#menu-caret-down"></use>
+            </svg>
+          </button>
+          <div class="dropdown"><pre>¯\_(ツ)_/¯</pre></div>
+        </div>
       </div>
       <article class="content">
         <div class="tabs">
