@@ -1,7 +1,7 @@
 // const openNavBtn = document.getElement
 window.addEventListener("DOMContentLoaded", () => {
-  // Tabs
 
+  // Tabs
   const tabs = document.querySelectorAll('[role="tab"]');
   const tabList = document.querySelector('[role="tablist"]');
 

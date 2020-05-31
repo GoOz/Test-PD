@@ -264,6 +264,7 @@ a:active {
 .breadcrumbs a:active {
   color: var(--medium-grey);
 }
+
 /* Content
 /* ---------------------------------------------------------- */
 .content {
@@ -288,11 +289,8 @@ a:active {
   cursor: pointer;
 }
 
-.tab-button:hover {
-  background-color: var(--light-grey);
-}
-
 .tab-button[aria-selected=true],
+.tab-button:hover,
 .tab-button:focus {
   background-color: var(--white);
   font-weight: bold;
