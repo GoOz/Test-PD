@@ -40,6 +40,10 @@ window.addEventListener("DOMContentLoaded", () => {
   })
 
   // Burger menu
+  const toggle = document.getElementById('toggle-burger');
+  const nav = document.getElementById('nav');
+
+  toggle.onclick = () => nav.classList.toggle('active');
 
 
 
