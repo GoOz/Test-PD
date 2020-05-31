@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <script src="assets/js/scripts.js"></script>
 </head>
 
 <body>
@@ -105,8 +106,45 @@
         <button type="button" class="button">Edit profile</button>
       </div>
       <article class="content">
-      Tortor nostra est natoque rutrum urna feugiat augue mauris sapien, facilisis efficitur finibus duis condimentum velit ad eros nunc eget, suscipit at id risus dui cras vehicula parturient. Facilisi est rutrum id potenti ullamcorper cubilia eget fames, tempor scelerisque per aptent fermentum sociosqu tellus vel praesent, ante tempus dapibus senectus ipsum nec magna. Dictum nostra auctor est egestas ultrices taciti maximus morbi, nec lectus dis lacus sollicitudin eleifend. Arcu id aptent platea mattis sociosqu, mauris eros fermentum odio tempus torquent, ornare tempor urna aenean.
-      Duis ipsum montes congue sit pharetra ex curabitur enim ad inceptos, nec orci eros litora interdum magnis feugiat vitae sagittis, integer fringilla eleifend laoreet porta nullam at sed facilisi. Rutrum feugiat accumsan suscipit luctus elementum hendrerit cursus maximus nostra fermentum, per nibh ridiculus consectetur turpis senectus neque rhoncus ex. Urna nullam quam accumsan risus himenaeos fames laoreet ridiculus dictum, congue placerat curae massa tellus quis blandit sapien, nisi ut hac netus et lectus ultricies eu. Est nec tempor efficitur sed dictumst porttitor massa, elementum inceptos turpis dignissim varius eget netus mattis, class non ante penatibus morbi nunc. Augue at aliquet ad duis nascetur metus, mi gravida morbi maximus penatibus erat, ante faucibus cubilia condimentum ipsum. Massa in mi egestas erat nisl ipsum ornare lorem leo porta hac potenti quam ligula inceptos etiam, hendrerit est varius duis vulputate mattis dolor pulvinar lectus ut arcu aliquet sem molestie tempus.
+        <div class="tabs">
+          <div role="tablist" class="tab-list" aria-label="Tabs">
+            <button role="tab" class="tab-button" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
+              Profile
+            </button>
+            <button role="tab" class="tab-button" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
+              Documents
+            </button>
+            <button role="tab" class="tab-button" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1">
+              Requests
+            </button>
+          </div>
+          <div id="panel-1" role="tabpanel" class="tab-panel" tabindex="0" aria-labelledby="tab-1">
+            <dl class="profile">
+              <dt>First name:</dt>
+              <dd>Carol</dd>
+              <dt>Last name:</dt>
+              <dd>Jenkins</dd>
+              <dt>Tech ID:</dt>
+              <dd>573920-DX</dd>
+              <dt>Date of birth:</dt>
+              <dd><time datetime="2018-07-07">May 28, 1979</time></dd>
+              <dt>Contact email:</dt>
+              <dd>
+                <a href="mailto:carol.jenkins@company.com">
+                  carol.jenkins@company.com
+                </a>
+              </dd>
+              <dt>Language:</dt>
+              <dd>English</dd>
+            </dl>
+          </div>
+          <div id="panel-2" role="tabpanel" class="tab-panel" tabindex="0" aria-labelledby="tab-2" hidden>
+            <p>Content for the second panel</p>
+          </div>
+          <div id="panel-3" role="tabpanel" class="tab-panel" tabindex="0" aria-labelledby="tab-3" hidden>
+            <p>Content for the third panel</p>
+          </div>
+        </div>
     </article>
       <footer class="footer">
         <div class="footer-copy">&copy; 2020 People Doc <abbr title="Incorporated">Inc.</abbr> All rights reserved</div>
